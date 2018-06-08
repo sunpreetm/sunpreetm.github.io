@@ -1,0 +1,90 @@
+body {
+background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);text-align: center;
+}
+#main {
+	width: 1000px;
+	height: 1000px;
+	background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); margin: 25px auto;
+	border: solid 2px black; padding: 10px; 
+}
+h1 {
+	text-align: center;font-family: "Arial";font: 24pt;color: black;
+}
+hr {
+	height: 2px;
+	color: #ffc0cb;
+}
+p {
+	font-family: "Arial";font-size: 12pt;text-align: left;
+	text-indent: 24px;color: black;
+}
+{
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url(img/bg.jpg);
+	background-size: cover;
+}
+body {
+	background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+
+	
+}
+
+nav {
+	width: 100%;
+	height: 60px;
+}
+nav p {
+	font-family: arial;
+	color: black;
+	font-size: 24px;
+	line-height: 55px;
+	float: left;
+	padding: 0px 120px;
+}
+
+nav ul {
+	float: left;
+}
+nav ul li {
+	float: left;
+	list-style: none;
+	position: relative;
+}
+
+nav ul li a {
+	display: block;
+	font-family: arial;
+	color: black;
+	font-size: 14px;
+	padding: 22px 14px;
+	text-decoration: none;
+}
+	
+nav ul li ul {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	padding:10px;
+	border-radius:0px 0px 4px 4px;
+}
+
+nav ul li:hover ul{
+	display: block;
+}
+
+nav ul li ul li {
+	width:180px;
+	border-radius: 4px;
+}
+
+nav ul li ul li a{
+	padding: 8px 14px;
+}
+
+nav ul li ul li a:hover{
+	background-color: #f3f3f3;
+}
+
