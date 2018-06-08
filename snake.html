@@ -80,7 +80,6 @@ function loop() {
   context.fillStyle = 'white';
   context.font = "16px Arial";
   context.fillText("Score: " + score, 8, 20);
-  context.clearRect(0,0,canvas.width,canvas.height);
   snake.x += snake.dx;
   snake.y += snake.dy;
   // wrap snake position on edge of screen
@@ -111,6 +110,7 @@ function loop() {
     context.fillRect(cell.x, cell.y, grid-1, grid-1);
     // snake ate apple
     if (cell.x === apple.x && cell.y === apple.y) {
+      score++;
       snake.maxCells++;
       apple.x = getRandomInt(0, 25) * grid;
       apple.y = getRandomInt(0, 25) * grid;
