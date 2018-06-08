@@ -120,6 +120,7 @@ function loop() {
       
       // collision. reset game
       if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
+        score = 0;
         snake.x = 160;
         snake.y = 160;
         snake.cells = [];
