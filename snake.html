@@ -51,6 +51,7 @@
 var canvas = document.getElementById('game');
 var context = canvas.getContext('2d');
 var grid = 16;
+var score = 0;
 var snake = {
   x: 160,
   y: 160,
@@ -75,6 +76,10 @@ function loop() {
     return;
   }
   count = 0;
+  context.clearRect(0,0,canvas.width,canvas.height);
+  context.fillStyle = 'white';
+  context.font = "16px Arial";
+  context.fillText("Score: " + score, 8, 20);
   context.clearRect(0,0,canvas.width,canvas.height);
   snake.x += snake.dx;
   snake.y += snake.dy;
